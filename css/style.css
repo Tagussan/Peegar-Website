@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/*
+ * init
+ */
+html {
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+ * background
+ */
+body {
+    background: #151515 url("../images/peegar.png") no-repeat fixed left top;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Open Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+/* body::before { */
+/*     background:url('../images/peegar.png') no-repeat left top; */
+/*     background-size: 100% auto; */
+/*     display: block; */
+/*     position: fixed; */
+/*     top: 0; */
+/*     left: 0; */
+/*     width: 100%; */
+/*     height: 150%; */
+/*     padding-bottom: 108px; */
+/*     content: ""; */
+/*     z-index: -1; */
+/* } */
+@media (max-width: 768px) {
+    body {
+        background: #151515;
+        /* background:url("../images/peegar_smartphone.png") no-repeat left top; */
+    }
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    /* background-color: #E13E11; */
+    margin: 0;
+    z-index: 1;
+}
+.header .container {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 0;
+}
+.header-image {
+    float: left;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+}
+.header-image img {
+    height: 32px;
+    margin-top: 25px;
+}
+.header-nav ul {
+    margin: 0;
+}
+.header-nav {
+    float: right;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.nav-item {
+    display: inline-block;
+}
+.header-nav .nav-item a {
+    display: inline-block;
+    list-style: none;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .header {
+        height: 50px;
+        width: 100%;
+    }
+    .header-image {
+        margin: 0 auto;
+    }
+    .header-image img {
+        height: 20px;
+        margin-top: 17px;
+    }
+    .header-nav {
+        display: none;
+    }
+}
+
+.title {
+    padding: 250px 30px 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.site-title-image {
+    display: block;
+    margin: 20px auto 20px;
+    width: 600px;
+    font-weight: normal;
+}
+.site-title-sub {
+    margin: 0 0 50px;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: normal;
+    /* font-family: "Roboto Slab"; */
+}
+/* E13E11 */
+.button {
+    display: inline-block;
+    width: 240px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(225, 62, 17, 0.8);
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Open Sans";
+    font-size: 1.7rem;
+}
+.button:hover {
+    background-color: rgba(225, 62, 17, 0.9);
+}
+@media (max-width: 768px) {
+    .title {
+        padding-top: 40%;
+    }
+    .site-title-image {
+        width: 90%;
+    }
+    .site-title-sub {
+        font-size: 1.8rem;
+    }
+}
+
+.about {
+    background-color: #fff;
+    color: #474545;
+    padding: 10% 7%;
+}
+.heading {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    /* font-family: "Roboto Slab", serif; */
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+.desc-text {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin: 0 auto;
+    width: 80%;
+}
+@media (max-width: 768px) {
+    .desc-text {
+        font-size: 1.4rem;
+        width: 100%;
+        line-height: 1.6;
+    }
+}
+
+.video {
+    padding: 10% 7%;
+    z-index: 2;
+}
+.video-frame {
+    width: 60%;
+}
+.youtube {
+}
+@media (max-width: 768px) {
+    .video-frame {
+        width: 90%;
+    }
+    .youtube {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.member {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10% 7% 5%;
+}
+.developer-table {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    width: 90%;
+    padding: 0;
+}
+.developer-link {
+    color: #fff;
+    text-decoration: none;
+}
+.dev-name-col{
+    width: 44%;
+    text-align: right;
+    padding: 0 1% 0 0;
+}
+.dev-role-col {
+    width: 44%;
+    text-align: left;
+    padding: 0 0 0 1%;
+}
+.developer-name {
+    line-height: 1.6;
+    margin: 0;
+    font-weight: bold;
+}
+.developer-role {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.member-heading {
+    display: block;
+    margin: 20px auto 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.acknowledgement {
+    width: 600px;
+    display: block;
+    margin: 40px auto 0;
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+.acknowledgement a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+@media (max-width: 768px) {
+    .developer-table {
+        width: 100%;
+    }
+    .developer-table td {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .dev-name-col {
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+    .dev-role-col {
+        line-height: 2;
+        font-size: 0.9rem;
+    }
+    .acknowledgement {
+        width: 90%;
+    }
+}
+
+.contact {
+    padding: 80px 0;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #474545;
+}
+.contact-text {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.contact-address {
+    text-decoration: none;
+    color: #474545;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.footer {
+    /* background-color: #383634; */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 0 5%;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: "Open Sans";
+    font-weight: normal;
+}
+.footer-image {
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Peegar</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="header-image" href="#">
+                <img src="images/peegar_white.png">
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a href="#video">VIDEO</a></li>
+                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+                    <li class="nav-item"><a href="#member">MEMBER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="title">
+        <img class="site-title-image" src="images/peegar_logo_white.png">
+        <h1 class="site-title-sub">A super-easy hardware development system.</h1>
+        <div class="buttons">
+            <a class="button" href="#video">WATCH VIDEO</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2 class="heading">About</h2>
+        <p class="desc-text">
+        <strong>Peegar</strong> is a super-easy hardware development system.
+        By creating a program intuitively on a web browser, hardware will instantly start moving.
+        Unlike standard prototyping kits, there is no need to install any software,
+        nor member registration for setting up your program.
+        All you need is a normal web browser, therefore you can program visually on your smartphones and tablets.
+        <strong>Peegar</strong> uses audio cable instead of USB cable to transfer the program to your hardware,
+        which is another special feature to make development simple.
+        Teachers can easily introduce how programming works to their students at school.
+        Moreover, adults that hesitated to learn programming can start their new challenge.
+        "<strong>Peegar</strong>" comes from the cute sound when sending the program.
+        </p>
+    </section>
+    <section class="video" id="video">
+        <h2 class="heading">Video</h2>
+        <!-- <video preload="none" onclick="this.play();" class="video-frame" controls id="demo-video"> -->
+        <!--     <source src="./future.mp4" type="video/mp4"/> -->
+        <!-- </video> -->
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/jDl18LT0jOY" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<h2>
+        <p class="contact-text">Please feel free to contact us.</p>
+        <a class="contact-address" href="mailto:hello&#64;peegar.com">hello&#64;peegar.com</a>
+    </section>
+
+
+    <section class="member" id="member">
+        <h2 class="heading">Member</h2>
+        <p class="member-heading">Developed By</p>
+        <table class="developer-table">
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Yoshitaka Taguchi</p></td>
+                <td class="dev-role-col"><p class="developer-role">Main Development: Circuit, Compiler,<br>Backend, Frontend and Integration</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Takaaki Sanjo</p></td>
+                <td class="dev-role-col"><p class="developer-role">Communication Protocol</p></td>
+            </tr>
+        </table>
+        <p class="member-heading">Supported By</p>
+        <table class="developer-table">
+            <tr>
+                <td class="dev-name-col"><p class="developer-name"><a href="http://designingplusnine.com/" class="developer-link">Designing Plus Nine</p></a>
+                <td class="dev-role-col"><p class="developer-role">Logo Design</p>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Kosuke Takahashi</p>
+                <td class="dev-role-col"><p class="developer-role">Design Integration</p>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Ayato Tanaka</p>
+                <td class="dev-role-col"><p class="developer-role">Movie</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Sho Yasui</td>
+                <td class="dev-role-col"><p class="developer-role">Circuit</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Tatsuhiko Sakaguchi</p></td>
+                <td class="dev-role-col"><p class="developer-role">Web Design (this page)</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Tomokazu Higuchi</p></td>
+                <td class="dev-role-col"><p class="developer-role">Toy Design (for exhibition in SXSW)</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Makabe Tasuku</p></td>
+                <td class="dev-role-col"><p class="developer-role">Toy Design (for exhibition in SXSW)</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Shotaro Sugiyama</p></td>
+                <td class="dev-role-col"><p class="developer-role">Toy Design (for exhibition in SXSW)</p></td>
+            </tr>
+            <tr>
+                <td class="dev-name-col"><p class="developer-name">Takumi Hayashi</p></td>
+                <td class="dev-role-col"><p class="developer-role">Toy Design (for exhibition in SXSW)</p></td>
+            </tr>
+        </table>
+        <p class="acknowledgement">This project is one of the submitted work in 'Bikkuri Dokkiri Mecha', which is the lecture held in the University of Tokyo. I would like to express my gratitude to two teachers, who are in charge of the lecture, Associate Professor Yoshio Mita and Associate Professor Yoshihiro Kawahara.</p>
+        <p class="acknowledgement">Powered by Blokcy<br><a href="https://developers.google.com/blockly/">https://developers.google.com/blocky/</a><br>This software includes the work that is distributed under the Apache License 2.0</p>
+    </section>
+    <section class="footer">
+        <img class="footer-image" src="images/peegar_white.png">
+        &copy; 2017 Peegar
+    </section>
+    <script type="text/javascript">
+        $(window).on('scroll load', function(e) {
+            var header = $('header').height();
+            var scrollnow = $(window).scrollTop();
+            var val = (10*header - 1.5*scrollnow)/(20*header);
+            if (val < 0) {
+                val = 0;
+            }
+            /* 最初は背景画像を暗くする */
+            $(".title").css("background-color", "rgba(0, 0, 0, "+val+")");
+            /* 最初はヘッダの色を無しにする */
+            $(".header").css("background-color", "rgba(225, 62, 17, "+(0.5-val)*2+")");
+        });
+        $("#demo-video").hover(function(event) {
+            if(event.type === "mouseenter") {
+                $(this).attr("controls", "");
+            } else if(event.type === "mouseleave") {
+                $(this).removeAttr("controls");
+            }
+        });
+    </script>
+</body>
+</html>
