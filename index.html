@@ -4,24 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Peegar</title>
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
 
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon-180x180.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./lib/jquery.showmore.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -52,10 +51,6 @@
         <h2 class="heading">About</h2>
         <p class="desc-text">
         <strong>Peegar</strong> is a super-easy hardware development system.
-        </p>
-        <!-- <label class="about-accordion" for="accordion">show more</label> -->
-        <!-- <input type="checkbox" id="accordion" class="on-off"/> -->
-        <p class="desc-text desc-sub">
         By creating a program intuitively on a web browser, hardware will instantly start moving.
         Unlike standard prototyping kits, there is no need to install any software,
         nor member registration for setting up your program.
@@ -67,6 +62,30 @@
         "<strong>Peegar</strong>" comes from the cute sound when sending the program.
         </p>
     </section>
+
+
+    <section class="features" id="features">
+        <h2 class="heading">Features</h2>
+        <div class="features-wrapper">
+            <div class="feature-container">
+                <i class="fa fa-bolt feature-icon" aria-hidden="true"></i>
+                <p class="feature-heading">Simple setup</p>
+                <p class="feature-description">need to install software for development</p>
+            </div>
+            <div class="feature-container">
+                <i class="fa fa-mobile feature-icon" aria-hidden="true"></i>
+                <p class="feature-heading">Any device</p>
+                <p class="feature-description">Available on PC/tablets/smartphones</p>
+            </div>
+            <div class="feature-container">
+                <i class="fa fa-smile-o feature-icon" aria-hidden="true"></i>
+                <p class="feature-heading">Visual Programming</p>
+                <p class="feature-description">Easy to create a program</p>
+            </div>
+        </div>
+    </section>
+
+
     <section class="video" id="video">
         <h2 class="heading">Video</h2>
         <!-- <video preload="none" onclick="this.play();" class="video-frame" controls id="demo-video"> -->
@@ -164,13 +183,6 @@
             } else if(event.type === "mouseleave") {
                 $(this).removeAttr("controls");
             }
-        });
-        $('.desc-sub').showMore({
-            speedDown: 300,
-            speedUp: 300,
-            height: '3.9rem',
-            showText: '&raquo; show more',
-            hideText: '&raquo; hide'
         });
     </script>
 </body>
