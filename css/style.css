@@ -37,16 +37,17 @@ body {
     /* background-color: #E13E11; */
     margin: 0;
     z-index: 1;
+    overflow: hidden;
 }
 .header .container {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     font-size: 0;
 }
 .header-image {
     float: left;
     vertical-align: top;
-    display: inline-block;
+    display: inline;
     margin: 0;
 }
 .header-image img {
@@ -59,14 +60,15 @@ body {
 .header-nav {
     float: right;
     margin: 0;
-    display: inline-block;
+    display: inline;
     vertical-align: top;
 }
 .nav-item {
-    display: inline-block;
+    display: inline;
+    margin: 20px;
 }
 .header-nav .nav-item a {
-    display: inline-block;
+    display: inline;
     list-style: none;
     width: 100px;
     height: 80px;
