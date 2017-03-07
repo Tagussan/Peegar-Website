@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./lib/jquery.showmore.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -49,6 +50,10 @@
         <h2 class="heading">About</h2>
         <p class="desc-text">
         <strong>Peegar</strong> is a super-easy hardware development system.
+        </p>
+        <!-- <label class="about-accordion" for="accordion">show more</label> -->
+        <!-- <input type="checkbox" id="accordion" class="on-off"/> -->
+        <p class="desc-text desc-sub">
         By creating a program intuitively on a web browser, hardware will instantly start moving.
         Unlike standard prototyping kits, there is no need to install any software,
         nor member registration for setting up your program.
@@ -154,6 +159,13 @@
             } else if(event.type === "mouseleave") {
                 $(this).removeAttr("controls");
             }
+        });
+        $('.desc-sub').showMore({
+            speedDown: 300,
+            speedUp: 300,
+            height: '3.9rem',
+            showText: '&raquo; show more',
+            hideText: '&raquo; hide'
         });
     </script>
 </body>
