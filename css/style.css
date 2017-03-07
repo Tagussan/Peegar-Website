@@ -82,8 +82,10 @@ body {
 }
 @media (max-width: 767px) {
     .header {
+        position: static;
         height: 50px;
         width: 100%;
+        background-color: #E13E11;
     }
     .header-image {
         margin: 0 auto;
@@ -134,6 +136,11 @@ body {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    .title-bg {
+        background: #151515 url("../images/peegar_smartphone.png") no-repeat left top;
+        background-position: center;
+        background-size: cover;
+    }
     .site-title-image {
         width: 90%;
     }
@@ -166,9 +173,6 @@ body {
 }
 .desc-sub {
     padding-top: -100px;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 .showmore_content { position:relative; overflow:hidden; }
 .showmore_trigger { width:100%; height:45px; line-height:45px; cursor:pointer; }
@@ -184,21 +188,6 @@ body {
     letter-spacing: 1px;
     font-family: "Open Sans";
     font-size: 1.2rem;
-}
-input[type="checkbox"].on-off {
-    display: none;
-}
-input[type="checkbox"].on-off + .desc-sub {
-    display: block;
-}
-input[type="checkbox"].on-off + .about-accordion {
-    display: none;
-}
-input[type="checkbox"].on-off:checked + .desc-sub {
-    display: none;
-}
-input[type="checkbox"].on-off + .about-accordion {
-    display: block;
 }
 @media (max-width: 767px) {
     .desc-text {
