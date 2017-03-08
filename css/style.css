@@ -16,9 +16,6 @@ body {
     background: #151515 url("../images/peegar.png") no-repeat fixed left top;
     background-position: center;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     color: #fff;
     text-align: center;
     font-size: 1.4rem;
@@ -229,14 +226,10 @@ body {
 }
 
 .video {
-    /* padding: 10% 7%; */
     z-index: 2;
     padding: 70px 2em;
     color: #FFF;
     background-color: #5DAE21;
-/* E13E11 */
-/* 118CE3 */
-/* 5DAE21 */
 }
 .video-frame {
     width: 60%;
