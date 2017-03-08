@@ -6,8 +6,7 @@
  */
 
 html {
-    font-size: 62.5%;
-}
+    font-size: 62.5%; }
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -119,18 +118,19 @@ body {
     margin: 0 0 50px;
     letter-spacing: 1px;
     font-size: 2.5rem;
-    font-weight: normal;
+    font-weight: lighter;
 }
 .button {
     display: inline-block;
-    width: 240px;
-    padding: 20px;
+    width: 200px;
+    padding: 18px;
     border-radius: 5px;
     background-color: rgba(225, 62, 17, 0.8);
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 .button:hover {
     background-color: rgba(225, 62, 17, 0.9);
@@ -156,17 +156,20 @@ body {
 .about {
     background-color: #118CE3;
     color: #FFF;
-    padding: 70px 1.5em;
+    padding: 70px 15%;
+    margin: 0;
 }
 .desc-text {
     font-size: 1.5rem;
     letter-spacing: 1px;
     line-height: 2;
     margin: 0 auto;
-    width: 80%;
     text-align: justify;
 }
 @media (max-width: 767px) {
+    .about {
+        padding: 70px 1.5em;
+    }
     .desc-text {
         font-size: 1.4rem;
         width: 100%;
@@ -180,7 +183,7 @@ body {
     color: #474545;
 }
 .features-wrapper {
-    width: 80%;
+    width: 70%;
     display: table;
     table-layout: fixed;
     margin: 0 auto;
@@ -204,10 +207,14 @@ body {
     font-size: 2.7rem;
 }
 .feature-description {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 @media (max-width: 767px) {
-    .feature-wrapper,
+    .features-wrapper {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
     .feature-container {
         display: block;
     }
