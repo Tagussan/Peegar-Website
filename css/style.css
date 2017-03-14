@@ -6,7 +6,8 @@
  */
 
 html {
-    font-size: 62.5%; }
+    font-size: 62.5%;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -42,41 +43,39 @@ body {
     /* background-color: #E13E11; */
     margin: 0;
     z-index: 1;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .header .container {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     font-size: 0;
+    position: relative;
 }
 .header-image {
-    float: left;
     vertical-align: top;
-    display: inline;
-    margin: 0;
+    float: left;
+    width: 20%;
 }
 .header-image img {
     height: 32px;
     margin-top: 25px;
 }
-.header-nav ul {
-    margin: 0;
-}
 .header-nav {
     float: right;
-    margin: 0;
-    display: inline;
     vertical-align: top;
+}
+.header-nav ul {
+    margin-right: 20px;
 }
 .nav-item {
     display: inline;
-    margin: 20px;
+    margin: 17px;
 }
 .header-nav .nav-item a {
     display: inline;
     list-style: none;
-    width: 100px;
-    height: 80px;
+    /*width: 100px;*/
+    /*height: 80px;*/
     line-height: 80px;
     letter-spacing: 1px;
     font-size: 1.3rem;
