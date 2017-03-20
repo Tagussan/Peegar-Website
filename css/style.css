@@ -276,6 +276,13 @@ body {
 .compare-table i {
     font-size: 2.5rem;
 }
+.compare-table .fa-asterisk{
+    font-size: 1rem;
+}
+.notion-text {
+    font-size: 1rem;
+    color: #151515;
+}
 @media (max-width: 767px) {
     .compare-table {
         display: block;
