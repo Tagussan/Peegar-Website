@@ -28,8 +28,7 @@ body {
 }
 
 .heading {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     font-size: 4rem;
     letter-spacing: 2px;
     font-family: "Open Sans", sans-serif;
@@ -229,6 +228,25 @@ body {
     .feature-heading {
         font-size: 2.2rem;
     }
+}
+
+.compare {
+    background-color: #E13E11;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 70px 2em;
+}
+.compare-table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    /*border: 2px solid #fff;*/
+}
+.compare-table td,
+.compare-table th {
+    border-width: 2px 0px;
+    border-color: #fff;
+    border-style: solid;
+    padding: 10px 20px;
 }
 
 .video {
