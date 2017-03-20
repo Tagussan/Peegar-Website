@@ -261,10 +261,10 @@ body {
 .compare-table th {
     text-align: left;
 }
-.checked {
-    background-color: #5DAE21;
-    color: #fff;
+.compare-table .checked i {
+    color: #5DAE21;
 }
+
 .compare-desc {
     font-size: 1.3rem;
     font-weight: normal;
