@@ -257,7 +257,6 @@ body {
     border-style: solid;
     padding: 10px 20px;
     font-size: 2rem;
-    font-weight: normal;
 }
 .compare-table th {
     text-align: left;
@@ -265,6 +264,17 @@ body {
 .checked {
     background-color: #5DAE21;
     color: #fff;
+}
+.compare-desc {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.compare-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.compare-table i {
+    font-size: 2.5rem;
 }
 @media (max-width: 767px) {
     .compare-table {
@@ -286,6 +296,12 @@ body {
     .compare-table td,
     .compare-table th {
         font-size :1.5rem;
+    }
+    .compare-header {
+        font-size: 1.5rem;
+    }
+    .compare-desc {
+        font-size: 1rem;
     }
 }
 
