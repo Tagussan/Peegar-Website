@@ -29,10 +29,15 @@ body {
 
 .heading {
     margin: 0 0 30px 0;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 2px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
+}
+@media (max-width: 767px) {
+    .heading {
+        font-size: 4rem;
+    }
 }
 
 .header {
@@ -58,10 +63,12 @@ body {
 .header-image img {
     height: 32px;
     margin-top: 25px;
+    margin-left: 20px;
 }
 .header-nav {
     float: right;
     vertical-align: top;
+    margin-right: 20px;
 }
 .header-nav ul {
     margin-right: 20px;
@@ -119,19 +126,22 @@ body {
     font-weight: lighter;
 }
 .button {
+    position: relative;
     display: inline-block;
     width: 200px;
     padding: 18px;
     border-radius: 5px;
-    background-color: rgba(225, 62, 17, 0.8);
+    background-color: rgba(225, 62, 17, 1);
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
     font-size: 1.5rem;
     font-weight: normal;
+    box-shadow: 0px 3px 0px #7c2309;
 }
 .button:hover {
-    background-color: rgba(225, 62, 17, 0.9);
+    top: -2px;
+    box-shadow: 0px 5px 0px #7c2309;
 }
 @media (max-width: 767px) {
     .title {
@@ -152,15 +162,14 @@ body {
 }
 
 .about {
-    background-color: #118CE3;
-    color: #FFF;
+    background-color: #eeeeee;
+    color: #474545;
     padding: 70px 15%;
     margin: 0;
 }
 .desc-text {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    line-height: 2;
+    font-size: 1.6rem;
+    line-height: 1.8;
     margin: 0 auto;
     text-align: justify;
 }
@@ -231,10 +240,10 @@ body {
 }
 
 .compare {
-    background-color: #E13E11;
-    color: #fff;
+    background-color: #eeeeee;
+    color: #474545;
     font-size: 2.5rem;
-    padding: 70px 2em;
+    padding: 70px 0;
 }
 .compare-table {
     margin: 10px auto;
@@ -243,10 +252,41 @@ body {
 }
 .compare-table td,
 .compare-table th {
-    border-width: 2px 0px;
+    border-width: 3px 0px;
     border-color: #fff;
     border-style: solid;
     padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.compare-table th {
+    text-align: left;
+}
+.checked {
+    background-color: #5DAE21;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .compare-table {
+        display: block;
+        position: relative;
+    }
+    .compare-table thead {
+        display: block;
+        float: left;
+    }
+    .compare-table tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    .compare-table td,
+    .compare-table th {
+        font-size :1.5rem;
+    }
 }
 
 .video {
@@ -259,6 +299,7 @@ body {
     width: 60%;
 }
 .youtube {
+    margin-top: 50px;
 }
 @media (max-width: 767px) {
     .video-frame {
